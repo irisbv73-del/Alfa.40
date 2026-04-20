@@ -1,113 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Plata - Bloc Saturn 34</title>
+    <title>Lista Plată Finală - Bloc Saturn</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 10px; background-color: #f8f9fa; color: #333; }
-        h2 { text-align: center; color: #2c3e50; margin-bottom: 5px; }
-        h4 { text-align: center; color: #7f8c8d; margin-top: 0; font-weight: normal; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 15px; background-color: #f0f2f5; }
+        h2, h4 { text-align: center; margin: 5px; color: #2c3e50; }
         
-        .table-container {
+        .table-scroll {
             width: 100%;
-            overflow-x: auto; /* Esențial pentru mobil */
+            overflow-x: auto;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            min-width: 1100px; /* Previne înghesuirea coloanelor */
+            min-width: 1900px; /* Lățime mare pentru a păstra toate coloanele lizibile */
         }
 
         th {
-            background-color: #f2f2f2; /* Gri antet */
+            background-color: #d1d8e0; /* Gri antet */
             color: #333;
-            padding: 12px 8px;
-            border: 1px solid #ddd;
-            font-size: 12px;
-            position: sticky;
-            left: 0;
+            padding: 12px 5px;
+            border: 1px solid #a5b1c2;
+            font-size: 10px;
+            text-transform: uppercase;
         }
 
         td {
-            padding: 10px 8px;
-            border: 1px solid #eee;
+            padding: 10px 5px;
+            border: 1px solid #d1d8e0;
             text-align: center;
-            font-size: 13px;
+            font-size: 12px;
         }
 
-        /* Verdele tău deschis (#bbfcd9) pentru rândurile pare */
+        /* Zebra Verde Deschis */
         tbody tr:nth-child(even) {
             background-color: #bbfcd9;
         }
 
-        /* Evidențiere la hover */
-        tbody tr:hover {
-            background-color: #e8fdf2;
+        /* Verde mai închis pentru coloanele de total */
+        .col-total {
+            background-color: #76c893 !important;
+            font-weight: bold;
+            color: #000;
         }
 
-        .highlight { font-weight: bold; color: #000; }
-        .footer-info { text-align: center; font-size: 11px; color: #95a5a6; margin-top: 15px; }
+        tr:hover { background-color: #e2fcf0; }
     </style>
 </head>
 <body>
 
-    <h2>Lista de plată - Martie 2026</h2>
-    <h4>Asociația Alfa 40 | Bloc SATURN 34, Scara A</h4>
+    <h2>LISTA DE PLATĂ - MARTIE 2026</h2>
+    <h4>Bloc SATURN 34, Scara A</h4>
 
-    <div class="table-container">
+    <div class="table-scroll">
         <table>
             <thead>
                 <tr>
                     <th>Nr. ap.</th>
                     <th>Nr. pers.</th>
                     <th>Supr. utilă</th>
-                    <th>Apă (MC)</th>
-                    <th>Apă Rece</th>
-                    <th>Diferențe</th>
-                    <th>En. El.</th>
-                    <th>Salubr.</th>
+                    <th>Cotă parte %</th>
+                    <th>AR MC</th>
+                    <th>Apă Rece Cons.</th>
+                    <th>Apă Rece Dif.</th>
+                    <th>En. Electrică</th>
+                    <th>Salubritate</th>
                     <th>Salarii</th>
-                    <th>Curățenie</th>
-                    <th>Admin.</th>
+                    <th>Serv. Curățenie</th>
+                    <th>Alte Chelt.</th>
+                    <th>Chelt. Adm.</th>
+                    <th class="col-total">Total Lună</th>
                     <th>Fond Rulm.</th>
-                    <th>Rest. Intr.</th>
-                    <th>Total Plată</th>
+                    <th>Fond Rep.</th>
+                    <th>Rest. Într.</th>
+                    <th>Rest. Fonduri</th>
+                    <th>Rest. Pen.</th>
+                    <th>Penalizări</th>
+                    <th class="col-total">Total de Plată</th>
+                    <th>Nr. ap.</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>1</td><td>1</td><td>37.66</td><td>3.00</td><td>51.09</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>-5.00</td><td class="highlight">132.78</td></tr>
-                <tr><td>2</td><td>2</td><td>37.66</td><td>5.00</td><td>85.15</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>0.00</td><td class="highlight">171.84</td></tr>
-                <tr><td>3</td><td>1</td><td>37.66</td><td>5.00</td><td>85.15</td><td>10.82</td><td>2.33</td><td>60.60</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>180.81</td><td class="highlight">394.54</td></tr>
-                <tr><td>4</td><td>2</td><td>37.66</td><td>6.00</td><td>102.18</td><td>10.82</td><td>2.33</td><td>60.60</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>219.88</td><td class="highlight">450.64</td></tr>
-                <tr><td>5</td><td>2</td><td>39.06</td><td>9.00</td><td>153.27</td><td>10.82</td><td>2.33</td><td>60.60</td><td>24.61</td><td>9.94</td><td>1.15</td><td>10.00</td><td>0.00</td><td class="highlight">272.69</td></tr>
-                <tr><td>6</td><td>2</td><td>37.66</td><td>9.00</td><td>153.27</td><td>10.82</td><td>2.33</td><td>60.60</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>0.00</td><td class="highlight">271.43</td></tr>
-                <tr><td>7</td><td>2</td><td>37.66</td><td>9.50</td><td>161.78</td><td>10.82</td><td>2.33</td><td>60.60</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>-1148.91</td><td class="highlight">-868.97</td></tr>
-                <tr><td>8</td><td>2</td><td>46.56</td><td>5.10</td><td>86.85</td><td>10.82</td><td>2.33</td><td>60.60</td><td>29.35</td><td>11.86</td><td>1.37</td><td>10.00</td><td>0.00</td><td class="highlight">213.15</td></tr>
-                <tr><td>9</td><td>0</td><td>39.06</td><td>0.00</td><td>0.00</td><td>10.82</td><td>0.00</td><td>0.00</td><td>24.61</td><td>9.94</td><td>1.15</td><td>10.00</td><td>0.00</td><td class="highlight">56.49</td></tr>
-                <tr><td>10</td><td>0</td><td>37.66</td><td>5.00</td><td>85.15</td><td>10.82</td><td>0.00</td><td>0.00</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>53.99</td><td class="highlight">204.37</td></tr>
-                <tr><td>11</td><td>1</td><td>37.66</td><td>5.00</td><td>85.15</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>-15.97</td><td class="highlight">155.87</td></tr>
-                <tr><td>12</td><td>1</td><td>46.56</td><td>2.99</td><td>50.95</td><td>10.82</td><td>1.16</td><td>30.30</td><td>29.35</td><td>11.86</td><td>1.37</td><td>10.00</td><td>136.80</td><td class="highlight">292.58</td></tr>
-                <tr><td>13</td><td>0</td><td>39.06</td><td>0.00</td><td>0.00</td><td>10.82</td><td>0.00</td><td>0.00</td><td>24.61</td><td>9.94</td><td>1.15</td><td>10.00</td><td>0.00</td><td class="highlight">56.49</td></tr>
-                <tr><td>14</td><td>4</td><td>37.66</td><td>9.00</td><td>153.27</td><td>10.82</td><td>4.66</td><td>121.20</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>697.25</td><td class="highlight">1085.65</td></tr>
-                <tr><td>15</td><td>1</td><td>37.66</td><td>1.30</td><td>22.14</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>104.58</td><td class="highlight">223.41</td></tr>
-                <tr><td>16</td><td>2</td><td>46.56</td><td>5.30</td><td>90.26</td><td>10.82</td><td>2.33</td><td>60.60</td><td>29.35</td><td>11.86</td><td>1.37</td><td>10.00</td><td>0.00</td><td class="highlight">216.56</td></tr>
-                <tr><td>17</td><td>2</td><td>39.06</td><td>12.00</td><td>204.36</td><td>10.82</td><td>2.33</td><td>60.60</td><td>24.61</td><td>9.94</td><td>1.15</td><td>10.00</td><td>340.34</td><td class="highlight">674.12</td></tr>
-                <tr><td>18</td><td>1</td><td>37.66</td><td>2.00</td><td>34.06</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>1.63</td><td class="highlight">132.38</td></tr>
-                <tr><td>19</td><td>0</td><td>37.66</td><td>0.00</td><td>0.00</td><td>10.82</td><td>0.00</td><td>0.00</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>53.99</td><td class="highlight">119.22</td></tr>
-                <tr><td>20</td><td>0</td><td>37.66</td><td>0.00</td><td>0.00</td><td>10.82</td><td>0.00</td><td>0.00</td><td>23.73</td><td>9.59</td><td>1.12</td><td>10.00</td><td>0.00</td><td class="highlight">55.23</td></tr>
+                <tr><td>1</td><td>1</td><td>37.66</td><td>1.12</td><td>3.00</td><td>51.09</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">127.78</td><td>10.00</td><td>0.00</td><td>-5.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">132.78</td><td>1</td></tr>
+                <tr><td>2</td><td>2</td><td>37.66</td><td>1.12</td><td>5.00</td><td>85.15</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">161.84</td><td>10.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">171.84</td><td>2</td></tr>
+                <tr><td>3</td><td>1</td><td>37.66</td><td>1.12</td><td>5.00</td><td>85.15</td><td>10.82</td><td>2.33</td><td>60.60</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">193.31</td><td>10.00</td><td>0.00</td><td>180.81</td><td>10.00</td><td>0.42</td><td>0.00</td><td class="col-total">394.54</td><td>3</td></tr>
+                <tr><td>4</td><td>2</td><td>37.66</td><td>1.12</td><td>6.00</td><td>102.18</td><td>10.82</td><td>2.33</td><td>60.60</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">210.34</td><td>10.00</td><td>0.00</td><td>219.88</td><td>10.00</td><td>0.42</td><td>0.00</td><td class="col-total">450.64</td><td>4</td></tr>
+                <tr><td>5</td><td>2</td><td>39.06</td><td>1.15</td><td>9.00</td><td>153.27</td><td>10.82</td><td>2.33</td><td>60.60</td><td>24.61</td><td>9.94</td><td>0.00</td><td>1.15</td><td class="col-total">262.69</td><td>10.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">272.69</td><td>5</td></tr>
+                <tr><td>6</td><td>2</td><td>37.66</td><td>1.12</td><td>9.00</td><td>153.27</td><td>10.82</td><td>2.33</td><td>60.60</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">261.43</td><td>10.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">271.43</td><td>6</td></tr>
+                <tr><td>7</td><td>2</td><td>37.66</td><td>1.12</td><td>9.50</td><td>161.78</td><td>10.82</td><td>2.33</td><td>60.60</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">269.94</td><td>10.00</td><td>0.00</td><td>-1148.91</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">-868.97</td><td>7</td></tr>
+                <tr><td>8</td><td>2</td><td>46.56</td><td>1.37</td><td>5.10</td><td>86.85</td><td>10.82</td><td>2.33</td><td>60.60</td><td>29.35</td><td>11.86</td><td>0.00</td><td>1.37</td><td class="col-total">203.15</td><td>10.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">213.15</td><td>8</td></tr>
+                <tr><td>9</td><td>0</td><td>39.06</td><td>1.15</td><td>0.00</td><td>0.00</td><td>10.82</td><td>0.00</td><td>0.00</td><td>24.61</td><td>9.94</td><td>0.00</td><td>1.15</td><td class="col-total">46.49</td><td>10.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">56.49</td><td>9</td></tr>
+                <tr><td>10</td><td>0</td><td>37.66</td><td>1.12</td><td>5.00</td><td>85.15</td><td>10.82</td><td>0.00</td><td>0.00</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">130.38</td><td>10.00</td><td>0.00</td><td>53.99</td><td>10.00</td><td>0.00</td><td>0.00</td><td class="col-total">204.37</td><td>10</td></tr>
+                <tr><td>11</td><td>1</td><td>37.66</td><td>1.12</td><td>5.00</td><td>85.15</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">161.84</td><td>10.00</td><td>0.00</td><td>-15.97</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">155.87</td><td>11</td></tr>
+                <tr><td>12</td><td>1</td><td>46.56</td><td>1.37</td><td>2.99</td><td>50.95</td><td>10.82</td><td>1.16</td><td>30.30</td><td>29.35</td><td>11.86</td><td>0.00</td><td>1.37</td><td class="col-total">135.78</td><td>10.00</td><td>0.00</td><td>136.80</td><td>10.00</td><td>0.00</td><td>0.00</td><td class="col-total">292.58</td><td>12</td></tr>
+                <tr><td>13</td><td>0</td><td>39.06</td><td>1.15</td><td>0.00</td><td>0.00</td><td>10.82</td><td>0.00</td><td>0.00</td><td>24.61</td><td>9.94</td><td>0.00</td><td>1.15</td><td class="col-total">46.49</td><td>10.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">56.49</td><td>13</td></tr>
+                <tr><td>14</td><td>4</td><td>37.66</td><td>1.12</td><td>9.00</td><td>153.27</td><td>10.82</td><td>4.66</td><td>121.20</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">324.36</td><td>10.00</td><td>0.00</td><td>697.25</td><td>30.00</td><td>24.04</td><td>0.00</td><td class="col-total">1085.65</td><td>14</td></tr>
+                <tr><td>15</td><td>1</td><td>37.66</td><td>1.12</td><td>1.30</td><td>22.14</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">98.83</td><td>10.00</td><td>0.00</td><td>104.58</td><td>10.00</td><td>0.00</td><td>0.00</td><td class="col-total">223.41</td><td>15</td></tr>
+                <tr><td>16</td><td>2</td><td>46.56</td><td>1.37</td><td>5.30</td><td>90.26</td><td>10.82</td><td>2.33</td><td>60.60</td><td>29.35</td><td>11.86</td><td>0.00</td><td>1.37</td><td class="col-total">206.56</td><td>10.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">216.56</td><td>16</td></tr>
+                <tr><td>17</td><td>2</td><td>39.06</td><td>1.15</td><td>12.00</td><td>204.36</td><td>10.82</td><td>2.33</td><td>60.60</td><td>24.61</td><td>9.94</td><td>0.00</td><td>1.15</td><td class="col-total">313.78</td><td>10.00</td><td>0.00</td><td>340.34</td><td>10.00</td><td>0.00</td><td>0.00</td><td class="col-total">674.12</td><td>17</td></tr>
+                <tr><td>18</td><td>1</td><td>37.66</td><td>1.12</td><td>2.00</td><td>34.06</td><td>10.82</td><td>1.16</td><td>30.30</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">110.75</td><td>10.00</td><td>0.00</td><td>1.63</td><td>10.00</td><td>0.00</td><td>0.00</td><td class="col-total">132.38</td><td>18</td></tr>
+                <tr><td>19</td><td>0</td><td>37.66</td><td>1.12</td><td>0.00</td><td>0.00</td><td>10.82</td><td>0.00</td><td>0.00</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">45.23</td><td>10.00</td><td>0.00</td><td>53.99</td><td>10.00</td><td>0.00</td><td>0.00</td><td class="col-total">119.22</td><td>19</td></tr>
+                <tr><td>20</td><td>0</td><td>37.66</td><td>1.12</td><td>0.00</td><td>0.00</td><td>10.82</td><td>0.00</td><td>0.00</td><td>23.73</td><td>9.59</td><td>0.00</td><td>1.12</td><td class="col-total">45.23</td><td>10.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="col-total">55.23</td><td>20</td></tr>
             </tbody>
         </table>
     </div>
-
-    <div class="footer-info">
-        * Pe mobil, glisați tabelul spre stânga pentru a vedea toate coloanele.<br>
-        Document generat digital pentru claritate maximă.
-    </div>
-
+    <p style="text-align: center; font-size: 11px; color: #7f8c8d;">* Glisați lateral pentru a vizualiza toate datele. Nr. ap. este afișat și la final pentru o citire mai ușoară.</p>
 </body>
 </html>
